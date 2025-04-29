@@ -47,7 +47,7 @@ const CreatePage = () => {
         <Container maxW={"container.sm"}>
             <VStack spacing={8}>
                 <Heading as={"h1"} size={"2xl"} textAlign={"center"} mb={8}>
-                    Create a New Product
+                    Criar um novo produto
                 </Heading>
 
                 <Box
@@ -59,28 +59,28 @@ const CreatePage = () => {
                 >
                     <VStack spacing={4}>
                         <Input
-                            placeholder="Product name"
+                            placeholder="Nome do Produto"
                             name="name"
                             value={newProduct.name}
                             onChange={(e) => setNewProduct({ ...newProduct, name: e.target.value })}
                         />
 
                         <Input
-                            placeholder="Price"
+                            placeholder="Preço"
                             name="price"
                             type="number"
                             value={newProduct.price}
                             onChange={(e) => setNewProduct({ ...newProduct, price: e.target.value })}
                         />
                         <Input
-                            placeholder="Image URL"
+                            placeholder="Imagem URL"
                             name="image"
                             value={newProduct.image}
                             onChange={(e) => setNewProduct({ ...newProduct, image: e.target.value })}
                         />
 
                         <Button colorScheme='blue' onClick={handleAddProduct} w="full">
-                            Add Product
+                            Adicionar produto
                         </Button>
                     </VStack>
                 </Box>
